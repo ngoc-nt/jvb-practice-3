@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --text-color: #252b42;
+    --primary-text-color: #96bb7c;
+    --danger-color: #e74040;
+	--color-main-blue-500: #505f98;
+	--color-secondary-white-100-general: #FFF;
+	--color-main-blue-800: #111B47;
+}
+
+.header {
+    /* background-image: url("../images/header.png"); */
+    background-size: cover;
+    background-position: top right;
+    padding: 50px 100px 50px 100px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar__item {
+    margin-right: 60px;
+}
+
+.header__center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header__right {
+    display: flex;
+}
+
+.buy-now-btn {
+	background: var(--color-main-blue-800, #111B47);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-section {
+    padding: 50px;
+}
+
+.main-section__container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.content__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content__paragraph {
+    color: var(--color-main-blue-500);
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Regular 18 */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.plt-80 {
+    padding-left: 80px;
+    padding-top: 80px;
+}
+
+.main-section__container {
+    display: flex;
+    justify-content: left;
+}
+
+.content {
+    text-align: left;
+}
+
+.content__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content__paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div__item {
+    padding: 10px 20px;
+    margin: 0 10px;
+	border-radius: 2px;
+	background: var(--color-main-blue-800, #111B47);
+	color: var(--color-secondary-white-100-general);
+    border-radius: 5px;
+    cursor: pointer;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+}
