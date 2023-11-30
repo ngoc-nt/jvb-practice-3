@@ -29,7 +29,7 @@ body {
 }
 
 .brand-logo {
-    color: var(--colour-logo-primary, #37447e);
+    color: var(--color-logo-primary, #37447e);
     font-feature-settings: "clig" off, "liga" off;
     font-size: 26px;
     font-style: normal;
@@ -157,6 +157,22 @@ body {
     cursor: pointer;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
+    border-radius: 2px;
+    border: 2px solid var(--color-main-blue-900, #091133);
+}
+
+.button-div__item_white {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 2px;
+    background: var(--color-secondary-white-100-general);
+    color: var(--color-main-blue-800);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    border-radius: 2px;
+    border: 2px solid var(--color-main-blue-900, #091133);
 }
 
 .cart-product {
