@@ -22,7 +22,10 @@ body {
 .header__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-image: url(../images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
 .brand-logo {
@@ -61,6 +64,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    height: 50px;
 }
 
 .main-section {
