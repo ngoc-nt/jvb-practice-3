@@ -1,20 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
     --text-color: #252b42;
     --primary-text-color: #96bb7c;
     --danger-color: #e74040;
-	--color-main-blue-500: #505f98;
-	--color-secondary-white-100-general: #FFF;
-	--color-main-blue-800: #111B47;
+    --color-main-blue-500: #505f98;
+    --color-secondary-white-100-general: #fff;
+    --color-main-blue-800: #111b47;
 }
 
 .header {
-    /* background-image: url("../images/header.png"); */
     background-size: cover;
     background-position: top right;
     padding: 50px 100px 50px 100px;
@@ -24,6 +23,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.brand-logo {
+    color: var(--colour-logo-primary, #37447e);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
 }
 
 .header__left {
@@ -48,7 +56,7 @@ body {
 }
 
 .buy-now-btn {
-	background: var(--color-main-blue-800, #111B47);
+    background: var(--color-main-blue-800, #111b47);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -56,7 +64,7 @@ body {
 }
 
 .main-section {
-    padding: 50px;
+    margin: 50px;
 }
 
 .main-section__container {
@@ -86,11 +94,33 @@ body {
     font-weight: 400;
     line-height: 30px; /* 166.667% */
 }
+/* custom */
 
 .plt-80 {
     padding-left: 80px;
     padding-top: 80px;
 }
+
+.ml-70 {
+    margin-left: 70px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.ml-800 {
+    margin-left: 800px;
+}
+/* custom */
 
 .main-section__container {
     display: flex;
@@ -115,17 +145,205 @@ body {
 
 .button-div {
     display: flex;
-    justify-content: center;
 }
 
 .button-div__item {
     padding: 10px 20px;
     margin: 0 10px;
-	border-radius: 2px;
-	background: var(--color-main-blue-800, #111B47);
-	color: var(--color-secondary-white-100-general);
+    border-radius: 2px;
+    background: var(--color-main-blue-800, #111b47);
+    color: var(--color-secondary-white-100-general);
     border-radius: 5px;
     cursor: pointer;
-	text-align: center;
-	font-feature-settings: 'clig' off, 'liga' off;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+}
+
+.cart-product {
+    margin-top: 90px;
+}
+
+.intro__left__img {
+    width: 100%;
+}
+
+.intro__left__text--title {
+    color: var(--colour-main-blue-900, #091133);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.intro__left__text--body {
+    color: var(--colour-main-blue-400, #6f7cb2);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.intro__left__text--button {
+    color: var(--colour-secondary-white-100-general, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.intro__left__text--button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    background: var(--color-main-blue-800, #111b47);
+    color: var(--color-secondary-white-100-general);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    width: 50%;
+}
+
+.cart-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product_intro_header {
+    color: var(--color-main-blue-900, #091133);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.product_intro_text {
+    color: var(--color-main-blue-400, #6f7cb2);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.content_header {
+    color: var(--colour-main-blue-700, #222f65);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+}
+
+.content_text {
+    color: var(--color-main-blue-600, #37447e);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.product_intro__detail {
+    color: var(--color-main-grey-600, #5d6970);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer {
+    margin: 50px;
+}
+
+.footer__content--text-gray {
+    color: var(--colour-main-grey-400, #939ea4);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.navbar_logo {
+    color: var(--colour-logo-primary, #37447e);
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Bold 26 */
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px; /* 146.154% */
+    text-align: center;
+}
+
+.navbar_button {
+    color: var(--colour-secondary-white-100-general, #fff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+
+    /* Medium 12 */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.text-end {
+    text-align: right;
+}
+
+.line-footer {
+    height: 1px;
+    flex-shrink: 0;
+    background: #cdd1d4;
+    justify-content: center;
+}
+
+.navbar__url {
+    width: 245px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar__url--spacing {
+    color: var(--colour-main-blue-300, #929ecc);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text-logo-end {
+    gap: 50px;
+    text-align: right;
+}
+
+.text-logo-end img {
+    color: var(--colour-main-blue-300, #929ecc);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 30px;
 }
