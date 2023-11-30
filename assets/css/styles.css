@@ -116,10 +116,6 @@ body {
 .mt-90 {
     margin-top: 90px;
 }
-
-.ml-800 {
-    margin-left: 800px;
-}
 /* custom */
 
 .main-section__container {
@@ -263,6 +259,10 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+.button-div-section {
+    text-align: center;
 }
 
 footer {
